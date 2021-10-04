@@ -9,10 +9,13 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background: #f1f1f1;
 }
 
+header{
+    display: flex;
+}
 
 /*  <!-- Navigation verticale / Left Fixed Navbar --> */
 .nav-gauche {
@@ -22,12 +25,25 @@ body {
     background: #333;
     position: fixed;
     top: 0;
-    left: -300px;
+    left: 0px;
     border-right: 1px dashed #f1f1f1;
     z-index: 5;
     transition: all 0.2s ease-in-out;
+    display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
 }
 
+.cercle-portrait {
+    width: 150px;
+    height:150px;
+}
+.logo-cercle {
+    width: 58px;
+    height:58px;
+   /* padding-top: -300px;*/
+}
 
 /************************ HOME SECTION **********************/
 .accueil {
@@ -118,4 +134,81 @@ h1 {
 }
 .logo-btn-rond-acc {
     width: 35px;
+}
+
+
+.presentation {
+    display: grid;
+    grid-template-columns: repeat(12, 150px);
+    height:690px;
+    width: 1800px;
+    position: ;
+    overflow: ;
+    border-top: ;
+    border-bottom: ;
+    color: ;
+}
+.fond-forme {
+    background: ;
+    background-image: ;
+    width: ;
+    height: ;
+    position: ;
+    transform: rotate(-45deg) translateX(100px) translateY(-15px);
+    z-index: -1;
+}
+
+.titre-pres {
+    font-size: ;
+    text-align: ;
+    margin: ;
+    padding-left: ;
+}
+
+.container-presentation {
+    display: flex;
+    width: ;
+    justify-content: ;
+    align-items: ;
+    margin: ;
+    flex-shrink: 0;
+    padding-left: ;
+}
+.pres-gauche {
+    width: 600px;
+    flex-shrink: 0;
+    margin-bottom: 50px;
+    padding-left: 120px;
+    padding-top: 20px;
+}
+.pres-gauche h3 {
+    text-align: ;
+    font-size: ;
+    letter-spacing: ;
+}
+.pres-gauche hr {
+    width: ;
+    margin: ;
+}
+.pres-gauche p {
+    text-align: ;
+}
+
+.pres-droite {
+    width: 600px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+.liste-presentation {
+    list-style-type: ;
+    padding: ;
+}
+.chiffre-style {
+    font-family: 'Abril Fatface', sans-serif;
+    font-size: ;
+}
+.txt-liste {
+    font-size: 'Montserrat', sans-serif;
+    display: ;
 }
