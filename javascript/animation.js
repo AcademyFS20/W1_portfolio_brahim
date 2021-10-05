@@ -7,7 +7,7 @@ var typewriter = new Typewriter(txt_animation, {
 });
 
 typewriter
-  .pauseFor(2000)
+  .pauseFor(1200)
   .typeString('My name is Belghiti brahim')
   .pauseFor(300)
   .typeString('&nbsp I am a <strong>Web Designer</strong> ')
