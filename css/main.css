@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Yeseva+One&display=swap');
 :root{
   
     /*font-styles*/
     --font-family:'Montserrat', sans-serif;
+    --titles-font-family:'Yeseva One', cursive;
 
     /* colors */
-    --primary-background-color: #3d3d3f;
-    --secondary-background-color: #6c6d70;
-    --primary-text-color: #272525;
+    --primary-background-color: #e8eaef;
+    --primary-text-color: #3d3d3f;
     --color-primary:#5067b3;
     --color-secondary:#7086cc;
 
@@ -38,8 +40,9 @@ html {
 }
 body {
     font-family: var(--font-family);
-    background: #f1f1f1;
-    /* coded added by me
+    background: var(--primary-background-color);
+    color: var(--primary-text-color);
+    /* coded 
     /*display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
@@ -68,13 +71,11 @@ header{
     /* New code */
     display: flex;
 	flex-direction: column;
-	/*justify-content: space-around;*/
+	justify-content: space-around;
 	align-items: center;
 }
  .blocs-menu{
-     padding:-20px 0 -20px 0;
-     margin:34px 0 34px 0;
-     font-family: var(--font-family);
+    font-family: var(--font-family);
  }
 .cercle-portrait {
     width: 150px;
@@ -120,7 +121,7 @@ color:#f1f1f1;
 }
 h1 {
     font-size: var(--h1);
-    font-family: var(--font-family);
+    font-family: var(--titles-font-family);
     margin: 0 60px;
     padding-top: 210px;
 }
