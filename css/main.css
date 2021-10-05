@@ -56,6 +56,46 @@ header{
     display: flex;
 }
 
+.burger {
+    border-radius: 80%;
+    width:89px;
+    height:89px;
+    background-color: var(--color-primary);
+    z-index: 10;
+    margin: 21px 0px 0px 21px;
+}
+.line{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height:3px;
+    width:55px;
+    background-color: var(--primary-background-color);
+ }
+
+ .line::before{
+    content :"";
+    display:inline;
+    position: absolute;
+    bottom: 377%;
+    height:3px;
+    width:55px;
+    background-color: var(--primary-background-color);
+ }
+
+.line::after{
+    content :"";
+    display:inline;
+    position:absolute;
+    bottom: -377%;
+    height:3px;
+    width:55px;
+    background-color:var(--primary-background-color);
+}
+
+
+
 /*  <!-- Navigation verticale / Left Fixed Navbar --> */
 .nav-gauche {
     width: 300px;
@@ -64,18 +104,20 @@ header{
     background: var(--color-primary);
     position: fixed;
     top: 0;
-    left: 0px;
+    left: -300px;
     border-right: 1px dashed #f1f1f1;
     z-index: 5;
     transition: all 0.2s ease-in-out;
     /* New code */
     display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
+    gap: 55px; /* row-gap column gap */
 }
  .blocs-menu{
     font-family: var(--font-family);
+    font-weight: 600;
  }
 .cercle-portrait {
     width: 150px;
@@ -276,3 +318,16 @@ h1 {
     font-size: 'Montserrat', sans-serif;
     display: ;
 }
+
+
+
+
+/* CSS for the first break point:998px */
+@media screen and (max-width: 998px){
+  .btn-rond{
+      visibility:hidden;
+  }
+
+
+}
+
