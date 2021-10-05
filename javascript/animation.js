@@ -17,4 +17,15 @@ typewriter
   .start();
 
 
-
+  var responsive = document.querySelector('.nav-gauche');
+  responsive.addEventListener("click" , function () {
+    if (view.style.display === "none"){
+      view.style.display = 'block'
+  
+  
+    }
+    else{
+      view.style.display = 'none',
+  
+    }
+  });

@@ -57,6 +57,7 @@ header{
 }
 
 .burger {
+    display:none;
     border-radius: 80%;
     width:89px;
     height:89px;
@@ -104,7 +105,7 @@ header{
     background: var(--color-primary);
     position: fixed;
     top: 0;
-    left: -300px;
+    left: 0px;
     border-right: 1px dashed #f1f1f1;
     z-index: 5;
     transition: all 0.2s ease-in-out;
@@ -322,12 +323,44 @@ h1 {
 
 
 
-/* CSS for the first break point:998px */
+ 
 @media screen and (max-width: 998px){
   .btn-rond{
       visibility:hidden;
   }
 
-
+  .nav-gauche {
+    width: 300px;
+    height: 100vh;
+    min-height: 800px;
+    background: var(--color-primary);
+    position: fixed;
+    top: 0;
+    left: -300px;
+    border-right: 1px dashed #f1f1f1;
+    z-index: 5;
+    transition: all 0.2s ease-in-out;
+    /* New code */
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    gap: 55px; /* row-gap column gap */
 }
 
+.burger{
+    display:inline-flex;
+    z-index:8;
+    position:absolute;
+}
+
+.accueil{
+    background: url("../ressources/accueil.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    height: 100vh;
+    min-height: 900px;
+    width:100%
+}
+}
