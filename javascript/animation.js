@@ -2,30 +2,26 @@ const txt_animation = document.querySelector('.txt-animation');
 console.log(txt_animation)
 
 var typewriter = new Typewriter(txt_animation, {
-  loop: true,
-  delay: 75,
+    loop: true,
+    delay: 75,
 });
 
 typewriter
-  .pauseFor(1200)
-  .typeString('My name is Belghiti brahim')
-  .pauseFor(300)
-  .typeString('&nbsp I am a <strong>Web Designer</strong> ')
-  .deleteChars(14)
-  .typeString('<strong> Web developer </strong>')
-  .pauseFor(1000)
-  .start();
+    .pauseFor(1200)
+    .typeString('My name is Belghiti brahim')
+    .pauseFor(300)
+    .typeString('&nbsp I am a <strong>Web Designer</strong> ')
+    .deleteChars(14)
+    .typeString('<strong> Web developer </strong>')
+    .pauseFor(1000)
+    .start();
 
+function myFunction() {
+    var x = document.getElementById("Nav-gauche");
+    if (x.className === "nav-gauche") {
+        x.className += " responsive";
+    } else {
+        x.className = "nav-gauche";
+    }
+}
 
-  var responsive = document.querySelector('.nav-gauche');
-  responsive.addEventListener("click" , function () {
-    if (view.style.display === "none"){
-      view.style.display = 'block'
-  
-  
-    }
-    else{
-      view.style.display = 'none',
-  
-    }
-  });

@@ -12,13 +12,13 @@
 </head>
 
 <body>
-    <div class=burger>
+    <div href="javascript:void(0);" class="burger" onclick="myFunction()">
         <div class=line></div>
     </div>
     
     <header>
         <!-- Navigation verticale -->
-        <nav class="nav-gauche">
+        <nav class="nav-gauche" id="Nav-gauche">
             <div class="blocs-menu">
                 <div class="cercle-portrait">
                     <img src="ressources/boss.svg" alt="portrait img">
@@ -109,7 +109,7 @@
 
         <section class="presentation" id="pres">
 
-            <h2 class="titre-pres">Lorem ipsum dolor sit amet.</h2>
+            <h2 class="titre-pres">About me</h2>
 
             <div class="container-presentation">
 
@@ -272,39 +272,39 @@
 
                 <div class="range-cont">
                     <p class="label-skill">JavaScript</p>
-                    <p class="number-skill">90%</p>
+                    <p class="number-skill">5%</p>
                     <div class="barre-skill b1"></div>
                     <div class="barre-grises"></div>
                 </div>
                 <div class="range-cont">
-                    <p class="label-skill">SEO</p>
-                    <p class="number-skill">75%</p>
+                    <p class="label-skill">HTML</p>
+                    <p class="number-skill">60%</p>
                     <div class="barre-skill b2"></div>
                     <div class="barre-grises"></div>
                 </div>
                 <div class="range-cont">
                     <p class="label-skill">UI / UX</p>
-                    <p class="number-skill">70%</p>
+                    <p class="number-skill">60%</p>
                     <div class="barre-skill b3"></div>
                     <div class="barre-grises"></div>
                 </div>
 
 
                 <div class="range-cont">
-                    <p class="label-skill">Node JS</p>
-                    <p class="number-skill">80%</p>
+                    <p class="label-skill">CSS</p>
+                    <p class="number-skill">25%</p>
                     <div class="barre-skill b4"></div>
                     <div class="barre-grises"></div>
                 </div>
                 <div class="range-cont">
                     <p class="label-skill">Wordpress</p>
-                    <p class="number-skill">70%</p>
+                    <p class="number-skill">5%</p>
                     <div class="barre-skill b5"></div>
                     <div class="barre-grises"></div>
                 </div>
                 <div class="range-cont">
                     <p class="label-skill">React JS</p>
-                    <p class="number-skill">80%</p>
+                    <p class="number-skill">5%</p>
                     <div class="barre-skill b6"></div>
                     <div class="barre-grises"></div>
                 </div>
@@ -335,9 +335,9 @@
                     <div class="boule-ico">
                         <img src="ressources/apple.svg" alt="icone gauche">
                     </div>
-                    <div class="boule-ico">
+                    <!-- <div class="boule-ico">
                         <img src="ressources/plane.svg" class="avion" alt="icone gauche">
-                    </div>
+                    </div> -->
                 </div>
 
 
@@ -394,11 +394,15 @@
 
                     <div class="form-groupe">
                         <label for="prenom">First Name</label>
-                        <input type="text" required maxlength="16" id="prenom">
+                        <input type="text" required maxlength="34" id="prenom">
                     </div>
                     <div class="form-groupe">
                         <label for="nom">Last Name</label>
-                        <input type="text" required maxlength="16" id="nom">
+                        <input type="text" required maxlength="34" id="nom">
+                    </div>
+                    <div class="form-groupe">
+                        <label for="email">email</label>
+                        <input type="text" required maxlength="34" id="email">
                     </div>
                     <div class="form-groupe">
                         <textarea id="txt" placeholder="Votre message" required></textarea>
