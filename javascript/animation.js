@@ -25,3 +25,6 @@ function myFunction() {
     x.className = "nav-gauche";
   }
 }
+
+
+

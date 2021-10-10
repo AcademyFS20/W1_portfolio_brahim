@@ -601,6 +601,9 @@ input[type=text], select {
     gap: 55px; 
 }
 
+.nav-menu-item.nav-gauche.responsive{
+
+}
 .burger{
     display:inline-flex;
     z-index:8;
@@ -614,21 +617,17 @@ input[type=text], select {
     align-items: center;
     gap:89px;
     width: 100%;
-
 }
 
 .accueil{
-    background: url("../ressources/accueil.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
     height: 100vh;
-    min-height: 900px;
     width:100%
 }
 
+
 .accueil h1 {
-    color:var(--color-primary)
+    color:var(--color-primary);
+    margin-top:34px;
 }
 .txt-animation {
     font-size: var(--h2);
