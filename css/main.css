@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Yeseva+One&display=swap');
+
+
 :root{
   
     /*font-styles*/
     --font-family:'Montserrat', sans-serif;
-    --titles-font-family:'Yeseva One', cursive;
+    --titles-font-family:'Roboto Slab', cursive;
 
     /* colors */
     --primary-background-color: #e8eaef;
@@ -14,7 +15,7 @@
     --color-secondary:#7086cc;
 
     /*sizes, weights, padding*/
-    --h1:54px;
+    --h1:56px;
     --h2:36px;
     --h3:28px;
     --h4:24px;
@@ -135,12 +136,11 @@ main
     border-right: 1px dashed #f1f1f1;
     z-index: 5;
     transition: all 0.2s ease-in-out;
-    /* New code */
     display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-    gap: 55px; /* row-gap column gap */
+    gap: 55px;
 }
  .blocs-menu{
     font-family: var(--font-family);
@@ -195,7 +195,7 @@ h1 {
     padding-top: 210px;
 }
 .txt-animation {
-    font-size: 30px;
+    font-size: var(--h2);
     margin: 10px 0 10px 60px;
 }
 .btn-acc {
@@ -269,8 +269,6 @@ h1 {
 
 
 .presentation {
-    
-    
     display: flex;
     flex-direction:column;
     justify-content: center;
@@ -293,9 +291,6 @@ h1 {
 .titre-pres {
     font-family: var(--titles-font-family);
     font-size: var(--h2);
-    text-align: ;
-    margin: ;
-    padding-left: ;
 }
 
 .container-presentation {
@@ -304,8 +299,8 @@ h1 {
 	justify-content: space-around;
 	align-items: center;
 	gap:144px;
-    /* margin-left:144px; */
 }
+
 .pres-gauche {
     width: 600px;
     flex-shrink: 0;
@@ -313,18 +308,11 @@ h1 {
     padding-left: 120px;
     padding-top: 20px;
 }
-.pres-gauche h3 {
-    text-align: ;
-    font-size: ;
-    letter-spacing: ;
-}
-.pres-gauche hr {
-    width: ;
-    margin: ;
-}
+
 .pres-gauche p {
-    text-align: ;
-    }
+    text-align: left;
+    margin-top: 34px;
+}
 
 .pres-droite {
     width: 600px;
@@ -333,24 +321,41 @@ h1 {
     justify-content: flex-start;
 }
 .liste-presentation {
-    list-style-type: ;
-    padding: ;
+    list-style:none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap:34px;
 }
+.item-liste{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: left;
+    gap:21px;
+
+}
+
 .chiffre-style {
     font-family: var(--titles-font-family);
-    font-size: var(--h2);
-}
+    font-size: var(--h3);
+    font-weight: bold;
+    float:left;
+    }
 .txt-liste {
     font-size: var(--font-family;)
-    display: inline;
+    float:right;
+    font-size: var(--h3);
+
+    
 }
 
 .portfolio
 {
-    z-index:5;
     display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-around;
     align-items: center;
     gap:55px;
     min-height:1050px;
@@ -380,7 +385,6 @@ h1 {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    
 }
 .titre-port
 {
@@ -409,7 +413,7 @@ h1 {
 .section-range{
     display: flex;
 	flex-direction: column;
-	justify-content: ;
+	justify-content: center;
     align-items: center;
     gap:89px;
 }
@@ -427,8 +431,6 @@ h1 {
     grid-template-rows: repeat(3, 1fr);
     gap:89px;
 }
-
-
 
 .barre-grises{
     background-color: gray;
@@ -502,7 +504,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap:89px; 
+    gap:101px; 
 }
 
 .flex-cont-bloc-exp{
@@ -511,21 +513,29 @@ h1 {
     align-items: center;
     justify-content: center;
     gap:55px; 
+    width:987px;
+}
+
+.titre-section-bloc{
+    font-size: var(--h4);
+    font-weight: var(--h4-weight);
 }
 
 .boule-ico{
-    width:20px;
-    height:20px;
+    width:34px;
+    height:34px;
 }
 
 .section-contact{
     min-height: 700px;
     display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
-    gap:89px;
+    gap:55px;
 }
+
+
 
 .form-bloc{
     display: flex;
@@ -534,12 +544,41 @@ h1 {
 	align-items: center; 
     gap:34px;
     font-size: var(--h4);
-}
+ }
+
+input[type=text], select {
+    width: 610px;
+    padding: 12px 20px;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    background-color: var(--color-secondary);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 610px;
+    height: 34px;
+    text-align: center;
+    font-size: var(--h5);
+  }
+
+   textarea{
+      height:144px;
+      width: 610px;
+  } 
+
+
+
 
 
 /* responsive*/
 
-@media screen and (max-width: 998px){
+@media screen and (max-width: 721px){
   .btn-rond{
       visibility:hidden;
   }
@@ -555,12 +594,11 @@ h1 {
     border-right: 1px dashed #f1f1f1;
     z-index: 5;
     transition: all 0.2s ease-in-out;
-    /* New code */
     display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-    gap: 55px; /* row-gap column gap */
+    gap: 55px; 
 }
 
 .burger{
@@ -569,6 +607,15 @@ h1 {
     position:absolute;
 }
 
+.main{
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+    align-items: center;
+    gap:89px;
+    width: 100%;
+
+}
 
 .accueil{
     background: url("../ressources/accueil.jpg");
@@ -579,4 +626,138 @@ h1 {
     min-height: 900px;
     width:100%
 }
+
+.accueil h1 {
+    color:var(--color-primary)
+}
+.txt-animation {
+    font-size: var(--h2);
+    margin: 10px 0 10px 60px;
+}
+
+
+.txt-animation::after {
+    content:"";
+    white-space: pre;
+
+}
+
+.btn-acc{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 0 60px;
+    white-space: pre-line;
+}
+.btn-acc1 {
+   margin: 55px 0 0 60px;
+}
+
+/* aboutme */
+.presentation{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap:89px;
+    width: 100%;
+}
+
+.container-presentation{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap:89px;
+    margin-left: -150px;
+
+}
+.titre-pres {
+    margin-left: -260px;
+}
+
+
+.pres-gauche {
+    margin-left: -300px;
+}
+.liste-presentation {
+    /* margin-left: -180px; */
+
+}
+
+
+.portfolio
+{
+    display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+    align-items: center;
+    gap:89px;
+    margin-left: -300px;
+    width:100%;
+
+}
+
+.cont-portfolio
+{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+
+}
+.section-range{
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+    align-items: center;
+    gap:89px;
+    margin-left: -300px;
+}
+.grille-skill{
+    min-height: 615px;
+    display:grid;
+    grid-template-columns: repeat(1, 1fr); 
+    grid-template-rows: repeat(3, 1fr);
+    gap:89px;
+}
+.travail-exp{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap:89px;
+     margin-left: -300px;
+}
+.cont-exp-travail{
+    display:flex;
+    flex-direction: row;
+    align-items: flex;
+    justify-content: center;
+    gap:89px;
+  }
+
+  .barre-verticale{
+    /* margin:55px; */
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:170px; 
+} 
+
+.flex-cont-bloc-exp{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:55px; 
+    width:377px;
+}
+
+.section-contact{
+    margin-left: -300px;
+}
+
 }
