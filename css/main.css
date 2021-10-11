@@ -9,13 +9,13 @@
     --titles-font-family:'Roboto Slab', cursive;
 
     /* colors */
-    --primary-background-color: #e8eaef;
+    --primary-background-color: #fafafa;
     --primary-text-color: #3d3d3f;
     --color-primary:#5067b3;
     --color-secondary:#7086cc;
 
     /*sizes, weights, padding*/
-    --h1:56px;
+    --h1:64px;
     --h2:36px;
     --h3:28px;
     --h4:24px;
@@ -124,7 +124,7 @@ main
 
 
 
-/*  <!-- Navigation verticale / Left Fixed Navbar --> */
+/*  <!-- Navigation verticale  --> */
 .nav-gauche {
     width: 300px;
     height: 100vh;
@@ -178,7 +178,7 @@ color:#f1f1f1;
 
 /************************ HOME SECTION **********************/
 .accueil {
-    background: url("../ressources/accueil.jpg");
+    background: url("../ressources/whiteackground.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
@@ -188,15 +188,17 @@ color:#f1f1f1;
     margin-left: auto;
     position: relative;
 }
-h1 {
+
+.accueil h1 {
     font-size: var(--h1);
     font-family: var(--titles-font-family);
+    color:var(--color-secondary);
     margin: 0 60px;
     padding-top: 210px;
 }
 .txt-animation {
     font-size: var(--h2);
-    margin: 10px 0 10px 60px;
+    margin: 21px 0 10px 60px;
 }
 .btn-acc {
     display: inline-flex;
@@ -212,7 +214,7 @@ h1 {
     font-size: 18px;
 }
 .btn-acc1 {
-    margin: 10px 0 0 60px;
+    margin: 21px 0 0 60px;
 }
 .btn-acc2 {
     background: transparent;
@@ -359,8 +361,6 @@ h1 {
     align-items: center;
     gap:55px;
     min-height:1050px;
-	
-    
    
 }
 .cont-portfolio
@@ -433,7 +433,7 @@ h1 {
 }
 
 .barre-grises{
-    background-color: gray;
+    background-color:#e4e2e2;
     width:377px;
     height:21px;
     z-index: -1;
@@ -601,9 +601,6 @@ input[type=text], select {
     gap: 55px; 
 }
 
-.nav-menu-item.nav-gauche.responsive{
-
-}
 .burger{
     display:inline-flex;
     z-index:8;
@@ -626,7 +623,7 @@ input[type=text], select {
 
 
 .accueil h1 {
-    color:var(--color-primary);
+    color:var(--color-secondary);
     margin-top:34px;
 }
 .txt-animation {
@@ -635,11 +632,11 @@ input[type=text], select {
 }
 
 
-.txt-animation::after {
+/* .txt-animation::after {
     content:"";
     white-space: pre;
 
-}
+} */
 
 .btn-acc{
     display:flex;
